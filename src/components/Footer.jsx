@@ -2,6 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
+        <>
         <div className="flex gap-5 w-full h-screen bg-zinc-900 p-20">
             <div className="w-1/2 h-full flex flex-col justify-between">
                 <div className="heading">
@@ -40,7 +41,7 @@ function Footer() {
                         <div className="br border-[1px] rounded-3xl hover:text-black hover:bg-slate-100">
                             <h2 className='block text-lg font-light p-1 hover:font-medium'>hello@ochi.design</h2>
                         </div>
-                        <h1 className=' mb-6 pt-8 text-xl'>Address:</h1>
+                        <h1 className=' mb-7 pt-5 text-xl'>Address:</h1>
                         <div className="br flex gap-10 px-16">
                             <div className="pt">
                                 <h2 className='block text-lg font-light underline'>202-1965 W 4th Ave
@@ -53,8 +54,13 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-            </div>
+         <div className="bottom border-t-[1px] mt-3 border-zinc-400 h-[9%] flex justify-between items-center">
+         <p className='sm:text-[1vw] text-[2.8vw] sm:mr-0 mr-[8vw]'>@2024 Ankit-Singh. All Rights Reserved</p>
+         <p className='sm:text-[1vw] text-[2.8vw]'>PRIVACY POLICY , TERMS & CONDITIONS</p>
+       </div>
         </div>
+            </div>
+        </>
     )
 }
 
